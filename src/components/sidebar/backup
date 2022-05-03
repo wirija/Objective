@@ -1,0 +1,169 @@
+import React from 'react'
+import './sidebar.css'
+import { BsGraphUp } from 'react-icons/bs'
+import { BiPurchaseTag, BiData, BiHomeAlt, BiHelpCircle, BiLogOut, BiUser, BiListUl, BiPieChartAlt, BiNews } from 'react-icons/bi'
+import { AiOutlineAim, AiOutlineAlert } from 'react-icons/ai'
+import { MdOutlineFeedback, MdOutlineDashboard } from 'react-icons/md'
+
+function sidebar() {
+    return (
+        <div className='sidebar_container'>
+
+
+            <div className='sidebar_section'>
+                <div className='sidebar_sectionName'>
+                    User
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiHomeAlt />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Home
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <MdOutlineFeedback />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Feedback
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiHelpCircle />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Help
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiLogOut />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Logout
+                    </div>
+                </div>
+            </div>
+
+
+            <div className='sidebar_section'>
+                <div className='sidebar_sectionName'>
+                    Admin
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiListUl />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Site Settings
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiUser />
+                    </div>
+                    <div className='sidebar_link_label'>
+                       User management
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiPieChartAlt />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Site Statistics
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div className='sidebar_section'>
+                <div className='sidebar_sectionName'>
+                    Dashboards
+                </div>
+                <div className='sidebar_link selected'>
+                    <div className='sidebar_link_icon'>
+                        <BsGraphUp />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Order to cash
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiPurchaseTag />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Purchase to pay
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiData />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Data master
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <AiOutlineAim />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        K-Trace
+                    </div>
+                </div>
+            </div>
+
+            <div className='sidebar_section'>
+                <div className='sidebar_sectionName'>
+                    Case Management 
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <MdOutlineDashboard />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Case Statistics
+                    </div>
+                </div>
+                <div className='sidebar_link'>
+                    <div className='sidebar_link_icon'>
+                        <BiNews />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        List of cases
+                    </div>
+                </div>
+                <div className='sidebar_link '>
+                    <div className='sidebar_link_icon'>
+                        <AiOutlineAlert />
+                    </div>
+                    <div className='sidebar_link_label'>
+                        Outstanding cases
+                    </div>
+                </div>
+     
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    )
+}
+
+export default sidebar

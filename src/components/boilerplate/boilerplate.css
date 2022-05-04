@@ -1,9 +1,9 @@
-.container{
+.boiler_container{
     display:flex;
 
 }
 
-.content_container{
+.boiler_content_container{
     margin-top: 5vh;
     width: 100%;
     height: calc(95vh - 2px);
@@ -11,18 +11,19 @@
     display: flex;
 }
 
-.content_container_center{
+.boiler_content_container_center{
     width: 70%;
     display: flex;
 }
 
-.sidebar{
+.boiler_sidebar{
     border-right: 1px groove rgba(255,255,255,.2);
 }
 
-.content{
+.boiler_content{
     width: 100%;
     padding-left: 1.5vh;
+    padding-right: 1.5vh;
     border-right: 1px groove rgba(255,255,255,.2);
 }
 

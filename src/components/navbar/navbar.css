@@ -29,7 +29,7 @@
 }
 
 .search {
-    width: 30%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,29 +44,36 @@
 
 .searchBtn {
     height: 80%;
-    width: 5%;
-    min-width: 30px;
-    margin-left: 0.2%;
+    width: 20%;
+    min-width: 50px;
+    max-width: 100px
 }
 
 .searchBtn button{
     height: 100%;
     width: 100%;
-    border-radius: 10%;
+    font-size: 35px;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    justify-content: center;
+    border: 1px solid black;
 }
 
 .searchBtnIcon{
-    height: 100%;
-    width: 100%;
-    font-size: 35px;
+    height: 80%;
+    width: auto;
 }
 
 
 .notifications{
+    width: 20%;
     display: flex;
     justify-content: right;
     align-items: center;
-    width: 40%;
+
 }
 
 .notification_container{

@@ -7,7 +7,7 @@ import { MdOutlineFeedback, MdOutlineDashboard } from 'react-icons/md'
 
 const data_sidebarContent = [
     {
-        sectionName: "User",
+        sectionName: "",
         links: [
             {
                 icon: "BiHomeAlt",
@@ -98,24 +98,45 @@ const data_sidebarContent = [
     }
 ];
 
+function userDetails() {
+    return (
+        <>
+            <div className='sidebar_userinfo'>
+                <div className='sidebar_useravatar'>
+                    <img className='sidebar_img' src={require('../../images/user/user_avatar.png')} />
+                </div>
+                <div className='sidebar_username'>
+                    Phsp
+                </div>
+            </div>
+        </>
+    )
+}
+
+
 function sidebarSection(sidebarContent) {
 
     return (
-        <>{
-            sidebarContent.map((item) =>
-                <>
-                    <div className='sidebar_sectionName'>
-                        {item.sectionName}
-                    </div>
-                    
-                    {item.links.map((link) =>
-                        <div className={'sidebar_link ' + (link.selected ? 'selected' : '')}>
-                            <div className='sidebar_link_icon'> {iconMap(link.icon)} </div>
-                            <div className='sidebar_link_label'> {link.label} </div>
-                        </div>)}
-                </>
-            )
-        }</>
+        <>
+            {userDetails()}
+            {
+                sidebarContent.map((item) =>
+                    <>
+                        <div className='sidebar_sectionName'>
+                            {item.sectionName}
+                        </div>
+
+                        {item.links.map((link) =>
+                            <div className={'sidebar_link ' + (link.selected ? 'selected' : '')}>
+                                <div className='sidebar_link_icon'> {iconMap(link.icon)} </div>
+                                <div className='sidebar_link_label'> {link.label} </div>
+                            </div>)}
+                    </>
+                )
+            }
+
+
+        </>
     )
 }
 

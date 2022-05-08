@@ -1,34 +1,61 @@
 .sidebar_container {
-    height: 90vh;
+    height: 100%;
     min-width: 250px;
     width: 10%;
-    padding-top: 0.8vh;
-    padding-left: 0.5vh;
-    padding-right: 0.5vh;
     display: block;
+    padding-top: 1vh;
 }
+
+
+
+.sidebar_userinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: middle;
+}
+
+.sidebar_useravatar{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1vh;
+
+}
+
+img.sidebar_img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.sidebar_username{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 
 
 .sidebar_section{
-    margin-bottom: 1.5vh;
+    margin-bottom: 10vh;
 }
 
 .sidebar_sectionName {
-    height: 1.5vh;
+    height: 2.2vh;
     font-weight: bold;
     padding-top: 0.32vh;
-    padding-bottom: 0.5vh;
-    padding-left: 0.5vh;
+    margin-left: 0.5vh;
     border-bottom: 2px solid #00338D;
-    margin-bottom: 0.2vh;
+    margin-bottom: 0.3vh;
     font-size: 1.3vh;
 }
 
 .sidebar_link {
-    height: 2.5vh;
+    height: 3.2vh;
     padding: 0.5vh;
     padding-left: 2vh;
-    margin-bottom: 0.2vh;
+    margin-bottom: 0.1vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2vh;
     display: flex;

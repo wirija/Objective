@@ -1,45 +1,73 @@
-.user_container{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Roboto:ital,wght@0,500;0,700;0,900;1,700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+
+.margin_right {
+    margin-right: 1vh;
+}
+
+.rotate_180 {
+    transform: rotate(180deg);
+}
+
+
+
+
+.user_container {
     width: 100%;
     height: 100%;
     display: block;
 }
 
-.user_header{
+.user_header {
     width: 100%;
-    height: 3.5%;
+    height: 2.75vh;
     display: flex;
+    margin-top: 1vh;
+    text-decoration: bold;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 0.5vh;
+    color: rgb(0, 51, 141, 1.3);
+    text-shadow: 0px 0px 0px rgb(72, 54, 152);
+    margin-bottom: 1%;
+    border-bottom: 1px solid rgb(0, 51, 141, 0.2);
 }
 
-
-.user_header_label{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+.user_header_label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
     font-weight: bold;
+
 }
 
-.card{
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
-    border: 1px solid rgba(0,51,141,0.5);
+.card {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    border-radius: 5px;
 }
 
 
-.user_navigation{
+.user_navigation {
     display: flex;
     align-items: center;
     height: 2rem;
     margin-bottom: 0.5vh;
 }
 
-.user_navigation_selection{
+.user_navigation_selection {
     height: 100%;
 }
 
-.user_navigation_button{
+.user_navigation_button {
     height: 100%;
     border: 1px solid #00338D;
     box-shadow: none;
@@ -50,69 +78,277 @@
 }
 
 
-.user_content{
+.user_content {
     display: inline-block;
     width: 100%;
     flex: 10;
 }
 
-.user_header_cards{
+.user_header_cards {
+    width: calc(100%-4vh);
+    height: 10vh;
+    margin-bottom: 1vh;
+    flex: 12;
+    display: flex;
+}
+
+.user_card_container {
+    display: flex;
+    flex-direction: column;
+    flex: 12;
+}
+
+.user_card_label {
     width: 100%;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(255, 255, 255, 0.9);
+    background: rgb(0, 94, 184, 0.8);
+    padding-left: 2.5%;
+}
+
+.user_card_content {
+    width: 100%;
+    flex: 6;
+    padding: 0.4rem;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 51, 141, 0.0);
+    justify-content: left;
+}
+
+
+.user_card_link {
+    width: 100%;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(0, 0, 0, 0.6);
+    background: rgb(0, 94, 184, 0.2);
+    ;
+    padding-left: 2.5%;
+}
+
+
+.user_card_maincontent {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75vh;
+}
+
+.user_card_subcontent {
+    font-size: 0.9rem;
+    margin-bottom: 0.5vh;
+}
+
+
+
+.user_content_select_period {
+    height: 3vh;
     margin-bottom: 1vh;
 }
 
-.user_card_parent{
-    height: 11vh;
-    width: 30%;
-    margin-right: 1%; 
-    border-radius: 15px;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
-    border: 1px solid rgba(0,51,141,0.5);
-    display: flex;
-    align-items: middle;
+.dropdown_selection {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border: 1px solid rgb(0, 51, 141, 0.2);
 }
 
-.user_card_content{
-    margin: 4px;
-    margin-left: 20px;
-    height: 90%;
-    padding: 0;
+.dropdown_selection:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+option {
+    height: 100vh;
+}
+
+.graphs {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    height: 25vh;
+    padding: 0.5%;
     display: flex;
     flex-direction: column;
-    flex: 7;
+    flex: 12;
+    margin-bottom: 1vh;
+}
+
+.graphs_label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(0, 94, 184);
+    margin-bottom: 0.5vh;
+    flex: 1;
+
+}
+
+.graphs_content_container {
+    height: 100% !important;
+    width: 100%;
+    display: block;
 }
 
 
-.user_card_icon{
-    flex: 2;
+.graphs_content_table {
+    height: 100% !important;
+    width: 100%;
+}
+
+.user_table {
+    height: 35vh;
+}
+
+
+.bkgd_green {
+    background: rgb(0, 163, 161);
+}
+
+.bkgd_green_light {
+    background: rgb(0, 163, 161, 0.5);
+}
+
+
+.bkgd_purple {
+    background: rgb(71, 10, 104, 0.8);
+}
+
+
+.bkgd_purple_light {
+    background: rgb(71, 10, 104, 0.2);
+}
+
+
+.bkgd_violet {
+    background: rgb(72, 54, 152, 0.8);
+}
+
+.bkgd_violet_light {
+    background: rgb(72, 54, 152, 0.2);
+}
+
+
+
+
+.graphs_content {
+    flex: 11;
+}
+
+
+
+
+.user_stats_cards {
+    width: calc(100%-4vh);
+    height: 35vh;
+    margin-bottom: 1vh;
+    flex: 12;
+    display: flex;
+}
+
+.user_stats_card_container {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.user_stats_cards_label {
+    width: 100%;
+    flex: 1;
     display: flex;
     align-items: center;
-}
-
-.user_card_icon_prop{
-    width: 28px;
-    font-size: 28px;
-    color: white;
-    background: rgb(207, 204, 204);
-    border-radius: 50%;
-}
-
-.user_card_header{
     font-weight: bold;
-    font-size:35px;
+    font-size: larger;
+    color: rgb(0, 94, 184, 0.9);
+    /* background: rgb(0, 94, 184, 0.8); */
+    padding-left: 2.5%;
+    border-bottom: 1px solid rgb(0, 94, 184, 0.2);
+}
+
+.user_stats_card_content {
+    flex: 11;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+table {
+
+    width: 98%;
+    height: 100%
+}
+
+th {
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding-left: 3%;
+}
+
+td {
+    text-align: left;
+    padding-left: 3%;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
     flex: 3;
 }
 
-.user_card_label{
-    font-weight: bold;
-    font-size: 30px;
-    flex: 2;
+.flex4 {
+    flex: 4;
+}
+
+.flex5 {
+    flex: 5;
+}
+
+.flex6 {
+    flex: 6;
 }
 
 
-.user_graphs{
-    height: 30vh;
-    width: 99%;
-    position: relative; 
+.text_center {
     text-align: center;
+    padding-left: 0;
+}
+
+
+.sectionTable {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    flex: 11;
+}
+
+.sectionTableheader {
+    border: 1px solid red;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sectionTableRow {
+    flex-direction: row;
+    align-items: center;
 }

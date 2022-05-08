@@ -19,13 +19,6 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className='search'>
-                    <input type="text" value='Search' ></input>
-                    <div className='searchBtn'>
-                        <button> <FiSearch className='searchBtnIcon' /> </button>
-                    </div>
-                </div>
-
                 <div className='notifications'>
                     <div className='notification_container'>
                         <div className='notification_icon'>
